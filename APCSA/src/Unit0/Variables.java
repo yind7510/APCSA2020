@@ -1,4 +1,4 @@
-package unit0;
+package Unit0;
 
 //(c) A+ Computer Science
 
@@ -83,12 +83,18 @@ public class Variables
 		System.out.println("*8 bit - byteOne = "+byteOne+"\t\t*");
 		System.out.println("*16 bit - shortOne = "+shortOne+"\t\t*");
 		System.out.println("*32 bit - intOne = "+intOne+"\t\t*");
-		System.out.println("*64 bit - longOne = "+longOne+"\t\t*");
-		System.out.println("*32 bit - floatOne = "+floatOne+"\t\t*");
-		System.out.println("*64 bit - doubleOne = "+doubleOne+"\t\t*");
+		System.out.println("*64 bit - longOne = "+longOne+"\t*");
+		System.out.println("*                               *");
+		System.out.println("*        real types            *");
+		System.out.println("*                               *");
+		System.out.println("*32 bit - floatOne = "+floatOne+"\t*");
+		System.out.println("*64 bit - doubleOne = "+doubleOne+"\t*");
 		System.out.println("*16 bit - charOne = "+charOne+"\t\t*");
+		System.out.println("*                               *");
+		System.out.println("*         other types           *");
+		System.out.println("*                               *");
 		System.out.println("*booleanOne = "+booleanOne+"\t\t*");
-		System.out.println("*StringOne = "+StringOne+"\t\t*");
+		System.out.println("*StringOne = "+StringOne+"\t*");
 
 
 
