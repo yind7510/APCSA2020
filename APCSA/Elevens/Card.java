@@ -42,7 +42,7 @@ public class Card
 
 	
 
-	public Card(String suitIn, String rankIn, int pointValIn) 
+	public Card(String rankIn, String suitIn, int pointValIn) 
 
 	{
 
@@ -124,6 +124,14 @@ public class Card
 
 	
 
+	public String getRank() {
+
+		return rank;
+
+	}
+
+	
+
 	public int getFace()
 
 	{
@@ -132,9 +140,37 @@ public class Card
 
 	}
 
+	
+
+	public int getPointValue() {
+
+		return pointValue;
+
+	}
 
 
 
+
+
+	public boolean matches(Card otherCard) {
+
+		if (this.getSuit().equals(otherCard.getSuit()) && this.getRank().equals(otherCard.getRank()) && this.getPointValue() == otherCard.getPointValue()) 
+
+			return true;
+
+		else if (this.getSuit().equals(otherCard.getSuit()) && this.getFace() == otherCard.getFace())
+
+			return true;
+
+		else
+
+			return false;
+
+	}
+
+	
+
+	
 
   	//toString
 
@@ -142,7 +178,13 @@ public class Card
 
 	{
 
-		return FACES[face] + " of " + suit;
+		if (face == 0)
+
+			return rank + " of " + suit + " (Point Value: " + pointValue + ")";
+
+		else
+
+			return FACES[face] + " of " + suit;
 
 	}
 
