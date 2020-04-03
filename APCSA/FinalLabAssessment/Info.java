@@ -108,7 +108,7 @@ public class Info implements Comparable<Info> {
 
 	public String toString() {
 
-		return "Company is "+ name+" and some info about them is: "+job.toString();
+		return "Company is "+ name+" and some info about it is that its: "+job.toString();
 
 	}
 
