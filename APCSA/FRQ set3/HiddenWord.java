@@ -1,4 +1,4 @@
-package APCSA_FRQ_Set3;
+package FRQ_Set3;
 
 public class HiddenWord {
 	private String hiddenWord;
